@@ -1,2 +1,0 @@
-# JavaTests
-Simple java exercises
