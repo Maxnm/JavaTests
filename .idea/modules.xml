@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Abramyan/Abramyan.iml" filepath="$PROJECT_DIR$/Abramyan/Abramyan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaTests.iml" filepath="$PROJECT_DIR$/JavaTests.iml" />
     </modules>
   </component>
 </project>
