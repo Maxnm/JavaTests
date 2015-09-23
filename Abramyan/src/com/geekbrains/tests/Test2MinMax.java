@@ -1,45 +1,46 @@
 package com.geekbrains.tests;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.Random;
 
 /**
  * @Author Max
  * @Date 15.09.2015
  * @Version JDK 1.8
  * @Purpose Education
+ * <p>
+ * Description: To find the greatest element of an array and average amount
  */
 public class Test2MinMax {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
 
-        //Создается массив случайной длинны;
-        double a = Math.random() * 20;
-        int b = (int) a;
+        Random r = new Random();
+
+        //Creating new array with random length 1-20;
+        int b = r.nextInt(20);
         int[] list = new int[b];
 
-        //Заполняется массив
+        //Filling it with numbers
         for (int i = 0; i < list.length; i++) {
-            double c = Math.random() * 10;
-            int f = (int) c * i;
+            int f = r.nextInt(10) * i;
             list[i] = i + f;
         }
 
-        //Начальные значения для максимума и суммы массива
+        //Default data for maximum and sum
         int max = Integer.MIN_VALUE;
         int sum = 0;
 
         for (int aList : list) {
-            //считаем в цикле сумму чисел массива
+            //Sum of all array elements
             sum = sum + aList;
 
-            //проверяем максимум
+            //Checking maximum
             if (aList > max) {
                 max = aList;
             }
         }
 
-        //считаем среднее
+        //Calculating average
         int average = sum / list.length;
 
         System.out.println(Arrays.toString(list));

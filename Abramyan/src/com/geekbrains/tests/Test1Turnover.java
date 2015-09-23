@@ -1,26 +1,29 @@
 package com.geekbrains.tests;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.Random;
+/*
+ * Description: To perform turning of an array upside down
+ */
 
-public class Test1Perevorot {
+public class Test1Turnover {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
 
-        //Создается массив случайной длинны;
-        double a = Math.random() * 20;
-        int b = (int) a;
+        Random r = new Random();
+
+        //Creating new array with random length 1-20;
+        int b = r.nextInt(20);
         int[] list = new int[b];
 
-        //Заполняется массив
+        //Filling it with numbers
         for (int i = 0; i < list.length; i++) {
-            double c = Math.random() * 10;
-            int f = (int) c * i;
+            int f = r.nextInt(10) * i;
             list[i] = i + f;
         }
 
         System.out.println(Arrays.toString(list));
-        //сортировка со сменой массива наоборот
+
+        //Sorting the array upside down
         for (int i = 0; i < list.length / 2; i++) {
             int tmp = list[i];
             list[i] = list[list.length - 1 - i];
