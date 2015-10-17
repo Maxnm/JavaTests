@@ -1,7 +1,4 @@
-package ua.kiev.prog.HomeWork.Lesson2;
-
-import java.io.IOException;
-import java.io.PrintWriter;
+package ua.kiev.prog.HomeWork.Lesson1.Vector3D.Lesson2;
 
 public class Board {
     private Shape[] shapeArr = new Shape[4];
@@ -49,12 +46,5 @@ public class Board {
         sb.append("Total area is ").append(totalArea);
         return sb.toString();
     }
-
-    public void saveToFile(String filename){
-        try (PrintWriter pw = new PrintWriter(filename)){
-            pw.println(this.toString());
-        }catch(IOException e){
-            System.out.println(e);
-        }
-    }
 }
+

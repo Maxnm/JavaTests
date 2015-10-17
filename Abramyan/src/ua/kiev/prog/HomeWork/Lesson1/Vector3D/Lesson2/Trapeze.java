@@ -1,4 +1,4 @@
-package ua.kiev.prog.HomeWork.Lesson2;
+package ua.kiev.prog.HomeWork.Lesson1.Vector3D.Lesson2;
 
 public class Trapeze extends Shape {
     private Point a;
@@ -25,7 +25,7 @@ public class Trapeze extends Shape {
         double cd = c.distance(d);
         double ad = d.distance(a);
         double p = ab + bc + cd + ad;
-        //??????? ???????? ?? ??????? ??????
+        //Площадь трапеции по формуле Герона
         return (ad + bc) / 4 * Math.abs(ad - bc) * Math.sqrt((p - ad) * (p - bc) * (p - ab) * (p - cd));
     }
 
@@ -34,3 +34,4 @@ public class Trapeze extends Shape {
         return "Trapeze area: " + area() + ",\n perimetr: " + size();
     }
 }
+

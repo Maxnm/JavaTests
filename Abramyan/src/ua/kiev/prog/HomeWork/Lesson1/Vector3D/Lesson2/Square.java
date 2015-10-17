@@ -1,15 +1,16 @@
-package ua.kiev.prog.HomeWork.Lesson2;
+package ua.kiev.prog.HomeWork.Lesson1.Vector3D.Lesson2;
 
-public class Triangle extends Shape {
-
+public class Square extends Shape {
     private Point a;
     private Point b;
     private Point c;
+    private Point d;
 
-    public Triangle(Point a, Point b, Point c) {
+    public Square(Point a, Point b, Point c, Point d) {
         this.a = a;
         this.b = b;
         this.c = c;
+        this.d = d;
     }
 
     public Point getA() {
@@ -36,22 +37,26 @@ public class Triangle extends Shape {
         this.c = c;
     }
 
+    public Point getD() {
+        return d;
+    }
+
+    public void setD(Point d) {
+        this.d = d;
+    }
+
     @Override
     public double area() {
-        return a.distance(b) + b.distance(c) + c.distance(a);
+        return a.distance(b) + b.distance(c) + c.distance(d) + d.distance(a);
     }
 
     @Override
     public double size() {
-        double p = area() / 2.0;
-        double ab = a.distance(b);
-        double bc = b.distance(c);
-        double ac = c.distance(a);
-        return Math.sqrt(p * (p - ab) * (p - bc) * (p - ac));
+        return a.distance(b) * b.distance(c);
     }
 
     @Override
     public String toString() {
-        return "Triangular area: " + area() + ",\n perimetr: " + size();
+        return "Square area: " + area() + ",\n perimetr: " + size();
     }
 }

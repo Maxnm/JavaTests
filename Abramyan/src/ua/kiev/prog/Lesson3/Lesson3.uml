@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ua.kiev.prog.HomeWork.Lesson3</OriginalElement>
+  <nodes>
+    <node x="155.0" y="148.0">ua.kiev.prog.HomeWork.Lesson3.Student</node>
+    <node x="174.0" y="0.0">ua.kiev.prog.HomeWork.Lesson3.Human</node>
+    <node x="0.0" y="171.0">ua.kiev.prog.HomeWork.Lesson3.GroupException</node>
+    <node x="84.66666666666666" y="296.0">ua.kiev.prog.HomeWork.Lesson3.Group</node>
+    <node x="172.16666666666666" y="489.0">ua.kiev.prog.HomeWork.Lesson3.MainClass</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ua.kiev.prog.HomeWork.Lesson3.MainClass" target="ua.kiev.prog.HomeWork.Lesson3.Student">
+      <point x="38.75" y="-26.0" />
+      <point x="288.41666666666663" y="464.0" />
+      <point x="308.16666666666663" y="464.0" />
+      <point x="308.16666666666663" y="271.0" />
+      <point x="334.1666666666667" y="271.0" />
+      <point x="71.66666666666669" y="49.0" />
+    </edge>
+    <edge source="ua.kiev.prog.HomeWork.Lesson3.MainClass" target="ua.kiev.prog.HomeWork.Lesson3.Group">
+      <point x="-38.75" y="-26.0" />
+      <point x="210.91666666666666" y="464.0" />
+      <point x="191.16666666666666" y="464.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="ua.kiev.prog.HomeWork.Lesson3.Student" target="ua.kiev.prog.HomeWork.Lesson3.Human">
+      <point x="0.0" y="-49.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="ua.kiev.prog.HomeWork.Lesson3.Group" target="ua.kiev.prog.HomeWork.Lesson3.Student">
+      <point x="0.0" y="-71.5" />
+      <point x="-71.66666666666669" y="49.0" />
+    </edge>
+    <edge source="ua.kiev.prog.HomeWork.Lesson3.Group" target="ua.kiev.prog.HomeWork.Lesson3.GroupException">
+      <point x="-71.0" y="-71.5" />
+      <point x="120.16666666666666" y="271.0" />
+      <point x="67.5" y="271.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="185.0" y="270.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
